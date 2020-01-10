@@ -28,7 +28,7 @@ public class RootController
      * @param response
      * @throws IOException
      */
-    @RequestMapping("/**")
+    @RequestMapping("/**") // or @RequestMapping("**")
     public void getDefault(HttpServletResponse response) throws IOException
     {
         response.sendRedirect("https://google.com");
